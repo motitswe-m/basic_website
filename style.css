@@ -1,0 +1,57 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .intro-photo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+        .city-photo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media only screen and (min-width: 760px) {
+            /* Styles for big screens */
+            .subjects-container {
+                display: flex;
+            }
+            .subject {
+                flex: 1;
+            }
+        }
+        @media only screen and (max-width: 960px) {
+            /* Styles for small screens */
+            .subject {
+                margin-bottom: 20px;
+            }
+            
+        }
