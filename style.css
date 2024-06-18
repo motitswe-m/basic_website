@@ -1,57 +1,139 @@
+/* General styles */
 body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        section {
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .intro-photo {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto;
-        }
-        .city-photo {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        @media only screen and (min-width: 760px) {
-            /* Styles for big screens */
-            .subjects-container {
-                display: flex;
-            }
-            .subject {
-                flex: 1;
-            }
-        }
-        @media only screen and (max-width: 960px) {
-            /* Styles for small screens */
-            .subject {
-                margin-bottom: 20px;
-            }
-            
-        }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://st.depositphotos.com/1010613/61658/i/450/depositphotos_616580442-stock-photo-computer-programmer-writing-program-code.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #ffcc00;
+  font-family: 'Poppins', sans-serif;
+}
+
+.intro-photo, .city-photo {
+  border-radius: 50%;
+  border: 3px solid #ffcc00;
+}
+
+p, table {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+table {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ffcc00;
+  padding: 10px;
+}
+
+th {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.subjects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.subject {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.subject img {
+  border-radius: 10px;
+}
+
+.subject h4 {
+  color: #000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+  }
+
+  .header {
+    font-size: 2em;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  .subjects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subject {
+    width: 90%;
+  }
+
+  p, table {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .header {
+    font-size: 1.5em;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  .subject {
+    width: 100%;
+  }
+}
